@@ -1,0 +1,10 @@
+img{
+    height: 40vh;
+    border-radius: 25px;
+    box-shadow: 1px 1px 13px 15px #ccc;
+
+}
+
+.header{
+    display: flex;
+}
