@@ -7,6 +7,7 @@ import css from "./Movies.module.css"
 import {Movie} from "../Movie";
 import {Header} from "../Header";
 
+
 const Movies=()=>{
     const {movies, loading} = useSelector(state => state.movieReducer);
     const dispatch = useDispatch();
@@ -50,6 +51,7 @@ const Movies=()=>{
 
                 movies.results?.map(movie => <Movie key={movie.id} movie={movie}/>)
             }
+
                 <div className={css.align}>
                     <button onClick={prevPage}>❮Prev</button>
                     <button onClick={nextPage}>Next❯</button>
