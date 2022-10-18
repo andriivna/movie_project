@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="Project">
+      <change afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StartRating/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movie/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StartRating/StarsRating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieDetails/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MoviesDetailsPage/MoviesDetailsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MoviesDetailsPage/MoviesDetailsPage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GDu5unXRFqTszz2PMrCkFgXK7h" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\IdeaProjects\projectreact2\src\pages\MoviesDetailsPage" />
+      <recent name="C:\Users\HP\IdeaProjects\projectreact2\src\components\Images" />
+      <recent name="C:\Users\HP\IdeaProjects\projectreact2\src\pages\MoviePage" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="" />
+      <created>1665935295584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665935295584</updated>
+      <workItem from="1665935298859" duration="385000" />
+      <workItem from="1665941071174" duration="17878000" />
+      <workItem from="1665990796878" duration="174000" />
+      <workItem from="1665992031772" duration="2076000" />
+      <workItem from="1666037740517" duration="5961000" />
+      <workItem from="1666087212010" duration="6037000" />
+      <workItem from="1666093797056" duration="3164000" />
+    </task>
+    <task id="LOCAL-00001" summary="Project">
+      <created>1665954892237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665954892237</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Project">
+      <created>1665959705883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665959705883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project" />
+  </component>
+</project>
