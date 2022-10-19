@@ -23,7 +23,12 @@ const MovieDetails=({state})=>{
                 </div>
 
                 <p>{state.overview}</p>
-                <Rating name="half-rating-read"  />
+                <Rating
+                    readonly={true}
+                    initialValue={Math.round(state.vote_average/2)}
+                    iconsCount={5}
+                    size={20}
+                />
             </div>
             </div>
         </div>
