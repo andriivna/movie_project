@@ -27,21 +27,6 @@ const getAll = createAsyncThunk(
     }
 );
 
-const getMovieByGenre = createAsyncThunk(
-    'genreSlice/getAll',
-    async ({page}, {rejectedWithValue}) => {
-        try {
-            const {data} = await movieService.getMovieByGenre(page);
-            return data
-
-        } catch (e) {
-
-            return rejectedWithValue(e.response.data)
-
-        }
-    }
-);
-
 const movieSlice = createSlice({
     name: 'movieSlice',
     initialState,
@@ -49,18 +34,10 @@ const movieSlice = createSlice({
         setCurrentMovie: (state, action) => {
             state.currentMovie = action.payload
         }
-    }
-});
+    },
 
 
-    const genreSlice = createSlice({
-        name: 'genreSlice',
-        initialState,
-        reducers: {
-            setCurrentGenre: (state, action) => {
-                state.currentGenre = action.payload
-            }
-        },
+
 
         extraReducers: builder =>
             builder
@@ -71,25 +48,20 @@ const movieSlice = createSlice({
                 .addCase(getAll.pending, (state, action) => {
                     state.loading = true
                 })
-                .addCase(getMovieByGenre.fulfilled,(state, action)=>{
-                    const {page, with_genres} = action.payload;
-                    state.page = page;
-                    state.with_genres = with_genres;
-                })
+
     });
 
 const {reducer:movieReducer, actions:{setCurrentMovie}} = movieSlice;
-const {reducer:genreReducer} = genreSlice
+
 
 const movieActions ={
     getAll,
     setCurrentMovie,
-    getMovieByGenre
+
 }
 
 export {
     movieReducer,
     movieActions,
-    genreReducer
 
 }

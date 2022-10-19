@@ -1,0 +1,11 @@
+.genres{
+    /*background-color: white;*/
+    width: 150px;
+    height: 800px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 150px;
+    margin-left: 150px;
+    backdrop-filter: blur(20px);
+    position: relative;
+}

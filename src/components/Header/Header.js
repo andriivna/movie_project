@@ -1,21 +1,32 @@
-import {Link} from "react-router-dom";
+
 import css from './Header.css'
+import {useState} from "react";
+import {UserInfo} from "../UserInfo";
 
 
-const Header=()=>{
-    return(
+
+
+const Header = () => {
+    return (
         <div className={css.header}>
 
-           <div>
-               <h5><Link>All Genres</Link></h5>
+            <div>
 
-               <form>
-              <input type="text" name={"search_film"} placeholder={'Search your interesting...'}/>
-            </form>
-           </div>
+
+                <form>
+                    <input type="text" name={"search_film"} placeholder={'Search your interesting...'}/>
+
+
+                </form>
+                <div>
+                    <UserInfo/>
+                </div>
+
+            </div>
         </div>
     )
-}
+};
+
 
 export {
     Header

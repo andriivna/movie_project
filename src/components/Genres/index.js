@@ -1,2 +1,1 @@
-// export * from '../../pages/MoviesDetailsPage/Genres';
-// export * from './Genres.module.css'
+export * from './Genres'

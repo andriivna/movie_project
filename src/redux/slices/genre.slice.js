@@ -1,72 +1,47 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {genreService, movieService} from "../../services";
+import {genreService} from "../../services";
 
-
-
-const initialState ={
-    genres: [],
-    currentGenre:null,
-    loading:false,
+const initialState={
+    genres:[],
     error:null,
+    loading:false
 }
 
-const getAll = createAsyncThunk(
-    'genreSlice/getAll',
-    async ({page}, {rejectedWithValue}) => {
+const getAllGenres = createAsyncThunk(
+    'genresSlice/getAllGenres',
+    async (_,{rejectedWithValue})=>{
         try {
-            const {data} = await genreService.getAll();
+            const {data} = await genreService.getAllGenres()
             return data
-
-        } catch (e) {
-
-            return rejectedWithValue(e.response.data)
-
+        }catch (e) {
+            return rejectedWithValue(e.response?.data)
         }
-    }
-);
-
-const getMoviesByGenres = createAsyncThunk(
-    'movieSlice/getMoviesByGenres',
-    async ({page,with_genres}) =>{
-        const {data} = await movieService.getMovieByGenre(page, with_genres);
-        return data
     }
 )
 
-const genreSlice = createSlice({
-    name: 'genreSlice',
+const genresSlice = createSlice({
+    name:'genresSlice',
     initialState,
-    reducers: {
-        setCurrentGenre: (state, action) => {
-            state.currentGenre = action.payload
-        }
-    },
+    reducers:{},
 
-    extraReducers: builder =>
-        builder
-            .addCase(getAll.fulfilled, (state, action) => {
-                state.genres = action.payload
-                state.loading = false
+    extraReducers:builder =>
+        builder.addCase(getAllGenres.fulfilled,(state, action)=>{
+            state.genres = action.payload
+            state.loading = false
+        })
+            .addCase(getAllGenres.pending,(state, action)=>{
+                state.error=action.payload
             })
-            .addCase(getAll.pending, (state, action) => {
-                state.loading = true
-            })
-            .addCase(getMoviesByGenres.fulfilled,(state, action)=>{
-                const {page, with_genres} = action.payload;
-                state.page = page;
-                state.with_genres = with_genres;
-            })
-});
+})
 
-const {reducer: genreReducer, actions: {setCurrentGenre}} = genreSlice;
+const {reducer: genresReducer} = genresSlice;
 
-const genreActions={
-    getAll,
-    setCurrentGenre,
-    getMoviesByGenres
+const genresAction ={
+    getAllGenres
 }
 
 export {
-    genreReducer,
-    genreActions
+    genresReducer,
+    genresSlice,
+    genresAction
 }

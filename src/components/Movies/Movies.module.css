@@ -1,5 +1,5 @@
 body{
-    background-image: url('https://wallup.net/wp-content/uploads/2019/09/945272-autumn-season-fall-color-tree-forest-nature-landscape-1.jpg') ;
+    background-image: url('https://images.hdqwalls.com/download/mountains-night-sky-1366x768.jpg') ;
 }
 .list{
     display: flex;
@@ -14,10 +14,13 @@ body{
 .background{
     border: 1px solid white;
     padding: 50px;
-    margin: 150px;
+    margin-top: 150px;
+    margin-right:150px;
+    margin-left: -20px;
     position: absolute;
     background: white;
     border-radius: 35px;
+
 }
 
 
