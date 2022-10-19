@@ -1,5 +1,6 @@
 import {Movies} from "../../components/Movies";
 
+
 const MoviePage=()=>{
     return(
         <div>
