@@ -4,8 +4,11 @@
 
 div>form{
     position: relative;
-    margin-left: 40%;
-    padding-bottom: 30px;
+    margin-left: 30%;
+    padding-bottom: 60px;
+    margin-top: -30px;
+    justify-content: center;
+
 
 }
 
@@ -29,12 +32,16 @@ div>h5{
     display: inline-block;
     width: 52px;
     height: 26px;
+
 }
+
+
 
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
+
 }
 .slider.round:before {
     border-radius: 50%;

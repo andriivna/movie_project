@@ -13,7 +13,7 @@ const Genres =()=> {
 
     useEffect(() => {
         dispatch(genresAction.getAllGenres())
-    },[])
+    },[dispatch])
 
     return(
         <div>

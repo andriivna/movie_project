@@ -15,7 +15,7 @@ const Header = () => {
             <div>
                 <div>
                     <label className={css.switch}>
-                        <input onClick={toggleDarkTheme} type="checkbox"/>
+                        <input onClick={toggleDarkTheme} type="button" value={'light theme'}/>
                         <span className={`${css.slider} ${css.round}`}></span>
                     </label>
                 </div>

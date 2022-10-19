@@ -44,7 +44,7 @@ const Movies=()=>{
 
                    <div className={css.input}> <Header/>
                    </div>
-                <hr/>
+
                 <div className={css.list}>
 
                 {

@@ -1,7 +1,7 @@
 import {Movies} from "../../components/Movies";
 import {Genres} from "../../components/Genres";
 import css from './MoviePage.module.css'
-import {UserInfo} from "../../components/UserInfo";
+
 
 
 const MoviePage=()=>{
