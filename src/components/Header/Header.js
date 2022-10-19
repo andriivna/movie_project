@@ -1,21 +1,31 @@
 
 import css from './Header.css'
-import {useState} from "react";
 import {UserInfo} from "../UserInfo";
 
 
 
 
 const Header = () => {
+    function toggleDarkTheme() {
+        return document.body.classList.toggle('dark-theme');
+    }
     return (
         <div className={css.header}>
 
             <div>
+                <div>
+                    <label className={css.switch}>
+                        <input onClick={toggleDarkTheme} type="checkbox"/>
+                        <span className={`${css.slider} ${css.round}`}></span>
+                    </label>
+                </div>
 
+                <div>
+
+                </div>
 
                 <form>
                     <input type="text" name={"search_film"} placeholder={'Search your interesting...'}/>
-
 
                 </form>
                 <div>
@@ -25,7 +35,7 @@ const Header = () => {
             </div>
         </div>
     )
-};
+}
 
 
 export {
