@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {movieActions} from "../../redux/slices";
+import {movieActions} from "../../services/redux/slices";
 
 import {useSearchParams} from "react-router-dom";
 import css from "./Movies.module.css"

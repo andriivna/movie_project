@@ -1,9 +1,11 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {genresAction} from "../../redux/slices";
-import {Genre} from "../Genre";
-import css from './Genres.module.css'
 
+
+import css from './Genres.module.css'
+import {genresAction} from "../../services/redux/slices";
+import {Link} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 
 
 const Genres =()=> {
@@ -12,7 +14,7 @@ const Genres =()=> {
 
 
     useEffect(() => {
-        dispatch(genresAction.getAllGenres())
+        dispatch(genresAction.getAll())
     },[dispatch])
 
     return(
@@ -23,7 +25,10 @@ const Genres =()=> {
 
             <div className={css.genres}>
                 {
-                    genres?.genres?.map(genre =><Genre key={genre.id} genre = {genre}/>)
+                    genres?.genres?.map(genre =><Link to={genre.id.toString()}>
+                        <div key={genre.id}>{genre.name}</div>
+                    </Link>
+                    )
                 }
             </div>
         </div>

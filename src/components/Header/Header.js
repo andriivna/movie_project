@@ -1,6 +1,9 @@
 
 import css from './Header.css'
 import {UserInfo} from "../UserInfo";
+import {useForm} from "react-hook-form";
+import {useDispatch} from "react-redux";
+import {movieActions} from "../../services/redux/slices";
 
 
 
@@ -8,6 +11,14 @@ import {UserInfo} from "../UserInfo";
 const Header = () => {
     function toggleDarkTheme() {
         return document.body.classList.toggle('dark-theme');
+    }
+
+    const{register,handleSubmit,reset} = useForm({defaultValues:{filter:''}})
+    const dispatch = useDispatch()
+
+    const submit = async (data)=>{
+        await dispatch(movieActions.setFilterParam(data.filter))
+        reset()
     }
     return (
         <div className={css.header}>
@@ -24,8 +35,8 @@ const Header = () => {
 
                 </div>
 
-                <form>
-                    <input type="text" name={"search_film"} placeholder={'Search your interesting...'}/>
+                <form onSubmit={handleSubmit(submit)}>
+                    <input type="text" name={"search_film"} placeholder={'Search your interesting...'} {...register('filter')}/>
 
                 </form>
                 <div>

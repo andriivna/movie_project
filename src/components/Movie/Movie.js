@@ -5,7 +5,9 @@ import {Rating} from "react-simple-star-rating";
 
 
 
+
 const Movie=({movie})=>{
+
     return(
         <div >
             <div className={css.full}>
