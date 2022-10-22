@@ -13,9 +13,8 @@ function App(){
                     <Route index element={<Navigate to={'movies'}/>}/>
                     <Route path={'movies'} element={<MoviePage/>}/>
                     <Route path={'movies/:id'} element={<MoviesDetailsPage/>}/>
-
-
                 </Route>
+
             </Routes>
 
         </div>

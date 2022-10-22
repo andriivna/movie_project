@@ -1,14 +1,15 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {movieActions} from "../../services/redux/slices";
+import {movieActions} from "../../redux/slices";
 
-import {useSearchParams} from "react-router-dom";
+import {Link, useParams, useSearchParams} from "react-router-dom";
 import css from "./Movies.module.css"
 import {Movie} from "../Movie";
 import {Header} from "../Header";
 
 
 const Movies=()=>{
+    const {id} = useParams();
     const {movies, loading} = useSelector(state => state.movieReducer);
     const dispatch = useDispatch();
     let [query, setQuery] = useSearchParams({page: '1'});
@@ -17,8 +18,8 @@ const Movies=()=>{
     const page = query.get('page');
 
     useEffect(() => {
-        dispatch(movieActions.getAll({page}))
-    },[page,dispatch]);
+        dispatch(movieActions.getAll({page,id}))
+    },[page,id]);
 
     const prevPage = () => {
         const prev = +page - 1;
@@ -49,8 +50,12 @@ const Movies=()=>{
 
                 {
 
-                movies.results?.map(movie => <Movie key={movie.id} movie={movie}/>)
-            }
+                movies.results?.map(movie =>
+                   <Link to={'/movie'} state = {movie}>
+
+                   <Movie key={movie.id} value={movie}/>)
+                    </Link>
+                )}
 
                 <div className={css.align}>
                     <button onClick={prevPage}>❮Prev</button>

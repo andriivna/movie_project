@@ -12,7 +12,7 @@ const MoviePage=()=>{
         <div className={css.page}>
 
         <div>
-            <Genres element={<Navigate to={'genres'}/>}/>
+            <Genres />
         </div>
         <div>
             <Movies/>

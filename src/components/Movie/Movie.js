@@ -6,7 +6,7 @@ import {Rating} from "react-simple-star-rating";
 
 
 
-const Movie=({movie})=>{
+const Movie=({value:movie})=>{
 
     return(
         <div >
