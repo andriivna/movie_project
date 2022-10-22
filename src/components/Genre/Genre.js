@@ -1,24 +1,19 @@
-import {useDispatch} from "react-redux";
-
-import css from "../GenresFilter/GenresFilter.module.scss";
-import {filterActions} from "../../redux/slices";
+import {Link} from "react-router-dom";
+import css from './Genre.module.css'
 
 
+const Genre=({genre})=>{
 
-const Genre = ({genre: {id, name}}) => {
-    const dispatch = useDispatch();
 
-    return (
-        <li>
-            <button
-                className={`${css.filter__item} ${css.genre}`}
-                onClick={() => dispatch(filterActions.setGenre(id))}
-                type={'button'}
-            >
-                {name}
-            </button>
-        </li>
-    );
+    return(
+        <div>
+        <div >
+            <Link to ={genre.id.toString()}><h5 className={css.line}>{genre?.name}</h5></Link>
+        </div>
+        </div>
+    )
+}
+
+export {
+    Genre
 };
-
-export {Genre};

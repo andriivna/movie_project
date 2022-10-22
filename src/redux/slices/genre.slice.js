@@ -1,40 +1,48 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-
 import {genreService} from "../../services";
 
-const initialState = {
-    genres: []
-};
+
+const initialState={
+    genres:[],
+    error:null,
+    loading:false
+}
 
 const getAll = createAsyncThunk(
-    'genreSlice/getAll',
-    async (_, {rejectWithValue}) => {
+    'genresSlice/getAll',
+    async (_,{rejectedWithValue})=>{
         try {
-            const {data} = await genreService.getAll();
-            return data;
-        } catch (e) {
-            return rejectWithValue(e.response.data);
+            const {data} = await genreService.getAll()
+            return data
+        }catch (e) {
+            return rejectedWithValue(e.response?.data)
         }
     }
-);
+)
 
-const genreSlice = createSlice({
-    name: 'genreSlice',
+const genresSlice = createSlice({
+    name:'genresSlice',
     initialState,
-    reducers: {},
-    extraReducers: (builder) => {
-        builder
-            .addCase(getAll.fulfilled, (state, action) => {
-                state.genres = action.payload;
+    reducers:{},
+
+    extraReducers:builder =>
+        builder.addCase(getAll.fulfilled,(state, action)=>{
+            state.genres = action.payload
+            state.loading = false
+        })
+            .addCase(getAll.pending,(state, action)=>{
+                state.error=action.payload
             })
-    }
-});
+})
 
-const {reducer: genreReducer} = genreSlice;
+const {reducer: genresReducer} = genresSlice;
 
-const genreActions = {
+const genresAction ={
     getAll
-};
+}
 
-
-export {genreReducer, genreActions};
+export {
+    genresReducer,
+    genresSlice,
+    genresAction
+}

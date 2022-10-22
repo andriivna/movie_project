@@ -19,7 +19,6 @@ const MovieDetails=({state})=>{
                     <div><p>{state.original_language}</p></div>
                     <div><p>{state?.title}</p></div>
                     <div><p>{state.release_date}</p></div>
-                    <div><p>Genre:{state.genre_ids}</p></div>
                 </div>
 
                 <p>{state.overview}</p>

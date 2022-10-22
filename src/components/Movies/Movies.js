@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {movieActions} from "../../redux/slices";
 
-import {Link, useParams, useSearchParams} from "react-router-dom";
+import { useParams, useSearchParams} from "react-router-dom";
 import css from "./Movies.module.css"
 import {Movie} from "../Movie";
 import {Header} from "../Header";
@@ -19,7 +19,7 @@ const Movies=()=>{
 
     useEffect(() => {
         dispatch(movieActions.getAll({page,id}))
-    },[page,id]);
+    },[page,id, dispatch]);
 
     const prevPage = () => {
         const prev = +page - 1;
@@ -50,12 +50,8 @@ const Movies=()=>{
 
                 {
 
-                movies.results?.map(movie =>
-                   <Link to={'/movie'} state = {movie}>
-
-                   <Movie key={movie.id} value={movie}/>)
-                    </Link>
-                )}
+                movies.results?.map(movie => <Movie key={movie.id} value={movie}/>)
+                }
 
                 <div className={css.align}>
                     <button onClick={prevPage}>❮Prev</button>
