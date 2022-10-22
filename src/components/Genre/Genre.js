@@ -5,10 +5,11 @@ import css from './Genre.module.css'
 const Genre=({genre})=>{
 
 
+
     return(
         <div>
         <div >
-            <Link to ={genre.id.toString()}><h5 className={css.line}>{genre?.name}</h5></Link>
+            <Link to ={'/genre/'+`${genre.id}`}><h5 className={css.line}>{genre?.name}</h5></Link>
         </div>
         </div>
     )

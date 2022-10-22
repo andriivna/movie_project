@@ -30,6 +30,18 @@ const getAll = createAsyncThunk(
     }
 );
 
+const getGenreID = createAsyncThunk(
+    'movieSlice/getGenreID',
+    async ({with_genres,page},{rejectWithValue})=>{
+        try {
+            const {data} = await movieService.getGenreID(with_genres, page);
+            return data
+        }catch (e){
+            return rejectWithValue(e.response.data)
+        }
+    }
+)
+
 const movieSlice = createSlice({
     name: 'movieSlice',
     initialState,
@@ -58,6 +70,14 @@ const movieSlice = createSlice({
                 .addCase(getAll.pending, (state, action) => {
                     state.loading = true
                 })
+                .addCase(getGenreID.fulfilled,(state, action)=>{
+                    state.movies = action.payload;
+                    state.errors = null;
+                    state.loading = true;
+                })
+                .addCase(getGenreID.pending,(state,action)=>{
+                    state.loading = true;
+                })
 
 
     });
@@ -69,7 +89,8 @@ const movieActions ={
     getAll,
     setCurrentMovie,
     setFilterParam,
-    setQueryParams
+    setQueryParams,
+    getGenreID
 
 }
 

@@ -13,6 +13,7 @@ function App(){
                     <Route index element={<Navigate to={'movies'}/>}/>
                     <Route path={'movies'} element={<MoviePage/>}/>
                     <Route path={'movies/:id'} element={<MoviesDetailsPage/>}/>
+                    <Route path={'/genre/:id'} element={<MoviePage/>}/>
                 </Route>
 
             </Routes>

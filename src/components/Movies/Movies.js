@@ -9,17 +9,22 @@ import {Header} from "../Header";
 
 
 const Movies=()=>{
-    const {id} = useParams();
+    const {id:genreId} = useParams();
     const {movies, loading} = useSelector(state => state.movieReducer);
     const dispatch = useDispatch();
-    let [query, setQuery] = useSearchParams({page: '1'});
+    let [query, setQuery] = useSearchParams({with_genres:`${genreId}`, page: '1'});
     console.log(query);
 
     const page = query.get('page');
+    const with_genres = query.get('with_genres');
 
     useEffect(() => {
-        dispatch(movieActions.getAll({page,id}))
-    },[page,id, dispatch]);
+        dispatch(movieActions.getAll({page}))
+    },[page, dispatch]);
+
+    useEffect(()=>{
+        dispatch(movieActions.getGenreID({with_genres,page}))
+    },[genreId, page])
 
     const prevPage = () => {
         const prev = +page - 1;

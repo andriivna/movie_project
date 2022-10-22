@@ -1,8 +1,9 @@
 import css from './MovieDetails.module.css'
 import {Rating} from "react-simple-star-rating";
+import {useParams} from "react-router-dom";
 
 const MovieDetails=({state})=>{
-
+    const {id: genreID} = useParams();
     return(
         <div className={css.poster}>
             <div className={css.element}>
@@ -19,6 +20,7 @@ const MovieDetails=({state})=>{
                     <div><p>{state.original_language}</p></div>
                     <div><p>{state?.title}</p></div>
                     <div><p>{state.release_date}</p></div>
+
                 </div>
 
                 <p>{state.overview}</p>

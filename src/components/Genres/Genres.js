@@ -16,7 +16,7 @@ const Genres =()=> {
 
     useEffect(() => {
         dispatch(genresAction.getAll())
-    },[dispatch])
+    },[])
 
     return(
         <div>
@@ -26,7 +26,7 @@ const Genres =()=> {
 
             <div className={css.genres}>
                 {
-                    genres?.genres?.map(genre =><Genre key={genre} genre={genre}/>)
+                    genres?.genres?.map(genre =><Genre key={genre.id} genre={genre}/>)
                 }
             </div>
         </div>
