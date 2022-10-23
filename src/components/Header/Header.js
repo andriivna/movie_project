@@ -26,8 +26,8 @@ const Header = () => {
 
             <div>
                 <div>
-                    <label className={css.switch}>
-                        <input onClick={toggleDarkTheme} type="button" value={'light theme'}/>
+                    <label>
+                        <input className={css.switch} onClick={toggleDarkTheme} type="button" value={'light theme'}/>
                         <span className={`${css.slider} ${css.round}`}></span>
                     </label>
                 </div>
@@ -37,7 +37,7 @@ const Header = () => {
                 </div>
 
                 <form onSubmit={handleSubmit(submit)}>
-                    <input type="text" name={"search_film"} placeholder={'Search your interesting...'} {...register('filter')}/>
+                    <input className={css.search} type="text" name={"search_film"} placeholder={'Search your interesting...'} {...register('filter')}/>
 
                 </form>
                 <div>

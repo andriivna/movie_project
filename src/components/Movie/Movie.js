@@ -11,7 +11,7 @@ const Movie=({value:movie})=>{
             <div className={css.full}>
                 <NavLink to={'/movies/details'} state={{...movie}}>
 
-                <div className={css.photo}><img src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt="movie img"/></div>
+                <div ><img className={css.photo} src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} alt="movie img"/></div>
                 </NavLink>
                    <div className={css.text}> <p><b>{movie.original_title}</b></p>
                     <p>{movie.release_date}</p> </div>

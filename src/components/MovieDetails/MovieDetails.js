@@ -9,7 +9,7 @@ const MovieDetails=({state})=>{
         <div className={css.poster}>
             <div className={css.element}>
             <div>
-                <div><img src={`https://image.tmdb.org/t/p/w200${state.poster_path}`} alt="movie img"/></div>
+                <div><img className={css.photo} src={`https://image.tmdb.org/t/p/w200${state.poster_path}`} alt="movie img"/></div>
             </div>
             <div className={css.text}>
                 <div className={css.header}>
