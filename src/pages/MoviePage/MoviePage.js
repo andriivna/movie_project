@@ -1,6 +1,5 @@
 import {Movies} from "../../components/Movies";
 import css from './MoviePage.module.css'
-
 import {Genres} from "../../components/Genres";
 
 

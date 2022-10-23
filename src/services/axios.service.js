@@ -1,5 +1,6 @@
 import axios from "axios";
-import {baseURL} from "../configs/urls";
+
+import {baseURL} from "../configs";
 
 export const axiosService = axios.create(
     {

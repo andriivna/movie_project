@@ -1,10 +1,8 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-
+import {genresAction} from "../../redux/slices";
 
 import css from './Genres.module.css'
-
-import {genresAction} from "../../redux/slices";
 import {Genre} from "../Genre";
 
 

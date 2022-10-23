@@ -1,6 +1,7 @@
-import css from './MovieDetails.module.css'
 import {Rating} from "react-simple-star-rating";
 import {useParams} from "react-router-dom";
+
+import css from './MovieDetails.module.css'
 
 const MovieDetails=({state})=>{
     const {id: genreID} = useParams();
