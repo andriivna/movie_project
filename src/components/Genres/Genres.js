@@ -21,7 +21,7 @@ const Genres =()=> {
     return(
         <div>
             <div>
-                {loading && <h1>Loading.........</h1>}
+                {/*{loading && <h1>Loading.........</h1>}*/}
             </div>
 
             <div className={css.genres}>

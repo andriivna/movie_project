@@ -43,7 +43,7 @@ const Movies=()=>{
 
     return (
         <div >
-            {loading && <h1>Loading.........</h1>}
+            {/*{loading && <h1>Loading.........</h1>}*/}
 
 
             <div className={css.background}>

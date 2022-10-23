@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="Project">
+    <list default="true" id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="Filtered genres added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Genre/Genre.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genre/Genre.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Genres/Genres.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Genres/Genres.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Movies/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/genre.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/genre.slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/movie.slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/genre.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/genre.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/movie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movie.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +80,8 @@
       <workItem from="1666358329550" duration="10289000" />
       <workItem from="1666383627921" duration="2372000" />
       <workItem from="1666441687906" duration="958000" />
-      <workItem from="1666466533793" duration="10838000" />
+      <workItem from="1666466533793" duration="11529000" />
+      <workItem from="1666517888720" duration="511000" />
     </task>
     <task id="LOCAL-00001" summary="Project">
       <created>1665954892237</created>
@@ -173,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666471605457</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Filtered genres added">
+      <created>1666480008620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666480008620</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project" />
+    <MESSAGE value="Filtered genres added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filtered genres added" />
   </component>
 </project>
