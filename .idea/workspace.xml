@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="Filtered genres added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Movie/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movie/Movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Movie/Movie.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movie/Movie.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDetails/MovieDetails.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserInfo/UserInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo/UserInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/movie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/movie.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/movie.slice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <workItem from="1666383627921" duration="2372000" />
       <workItem from="1666441687906" duration="958000" />
       <workItem from="1666466533793" duration="11529000" />
-      <workItem from="1666517888720" duration="8022000" />
+      <workItem from="1666517888720" duration="9271000" />
     </task>
     <task id="LOCAL-00001" summary="Project">
       <created>1665954892237</created>
@@ -193,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666546487416</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Filtered genres added">
+      <created>1666548707383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666548707383</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
