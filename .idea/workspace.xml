@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="Filtered genres added">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c35231c4-fdf5-4865-ae4a-552393082310" name="Changes" comment="Filtered genres added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +80,7 @@
       <workItem from="1666594926825" duration="675000" />
       <workItem from="1666595748895" duration="1288000" />
       <workItem from="1666598166051" duration="1410000" />
-      <workItem from="1666603042173" duration="1845000" />
+      <workItem from="1666603042173" duration="1915000" />
     </task>
     <task id="LOCAL-00001" summary="Project">
       <created>1665954892237</created>
@@ -232,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666603106992</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Filtered genres added">
+      <created>1666610671598</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666610671598</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
